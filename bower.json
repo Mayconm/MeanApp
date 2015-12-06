@@ -1,0 +1,21 @@
+{
+  "name": "Danubio",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.3",
+    "angular-resource": "~1.4.3",
+    "angular-route": "~1.4.3",
+    "semantic-ui": "~2.0.8",
+    "angular-input-masks": "~2.0.0",
+    "angular-ui-mask": "~1.4.2"
+  }
+}

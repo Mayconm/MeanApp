@@ -1,0 +1,68 @@
+
+<div class="ui grid container">
+    <div class="row">
+        <div class="column">
+            <h1>Estados</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <a class="ui blue button" ng-href="#/state">
+                <i class="icon plus"></i>
+                Adicionar
+            </a>    
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+<!--div class="input-group input-group-lg">
+    <span class="input-group-addon" id="sizing-addon1">@</span>
+    <input type="text" class="form-control" placeholder="Digite o nome para pesquisar" ng-model="filter" ng-change="search()">
+
+</div-->
+<!--<div class="ui message">-->
+  <!--<div class="header">-->
+    <!--Changes in Service-->
+  <!--</div>-->
+  <!--<p>{{message.text}}</p>-->
+<!--</div>-->
+            <div ng-show="message.text">
+                <div class="alert alert-{{message.type}}" role="alert">{{message.text}} </div>
+            </div>
+            <div class="ui segment">
+                <div class="ui active inverted dimmer" ng-show="loading">
+                    <div class="ui text loader">Carregando</div>
+                </div>
+                <!-- DataTable -->
+                <table class="ui celled table" ng-data-table="dataTable">
+                    <thead>
+                        <!-- Filters -->
+                        <tr class="filters">
+                            <th>
+                                <div>
+                                    <input type="text" placeholder="UF">
+                                    <i class="fa-search"></i>
+                                </div>
+                            </th>
+                            <th>
+                                <div>
+                                    <input type="text" placeholder="Nome">
+                                    <i class="fa-search"></i>
+                                </div>
+                            </th>
+                            <th><!-- Actions --></th>
+                        </tr>
+                        <!-- Titles -->
+                        <tr>
+                            <th>UF</th>
+                            <th>Nome</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>

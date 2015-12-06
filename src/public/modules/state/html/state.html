@@ -1,0 +1,44 @@
+<div class="ui grid container">
+
+    <div class="row">
+        <div class="column">
+          <h1 class="ui header">Estado</h1>   
+        </div>
+    </div>
+
+    <div class="row" ng-show="message.text">
+        <div class="column">
+          <div class="ui message">
+            <p>{{message.text}}</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+          <form ng-submit="save()" class="ui form">
+            <div class="field">
+                <label>UF</label>
+                <input type="text" name="unit" ng-model="state.unit" placeholder="UF"> 
+            </div>
+            
+            <div class="field">
+                <label>Nome</label>
+                <input type="text" placeholder="Descrição" 
+                       name="name" 
+                       ng-model="state.name">
+            </div>
+            <button type="submit" class="ui blue button"><i class="icon save"></i>Salvar</button>
+            <a href="#/stateList" class="ui gray button">Voltar</a>
+          </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+          
+        </div>
+    </div>
+
+    
+</div>
